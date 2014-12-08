@@ -23,6 +23,8 @@ var/
 *.egg
 
 venv/
+.idea/
+.ropeproject/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
