@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <title>Flask google new recaptcha example.</title>
+</head>
+<body>
+<script>
+    {% if showAlert %}
+        alert('{{ alertMsg }}')
+    {% endif %}
+</script>
+<form method=post action="{{url_for('index')}}">
+    <div class="g-recaptcha" data-sitekey="{{siteKey}}"></div>
+    <input type=submit value=send>
+</form>
+</body>
+</html>
